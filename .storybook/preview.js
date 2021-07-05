@@ -1,8 +1,8 @@
-// import React from "react";
-// import {addDecorators} from '@storybook/react';
-// import Center from '../src/Component/Center/Center';
+import React from "react";
+import {addDecorator} from '@storybook/react';
+import Center from '../src/Component/Center/Center';
 
-// addDecorators(story => <Center>{story()}</Center>)
+addDecorator(story => <Center>{story()}</Center>)
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
